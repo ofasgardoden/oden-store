@@ -1,4 +1,4 @@
-# oden-store — Oden Goods storefront (GitHub Pages)
+# oden-store — Digital Treasures storefront (GitHub Pages)
 
 Public landing pages for digital products. Hosted free on GitHub Pages.
 
