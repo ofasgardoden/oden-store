@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Your download — Calibration Trading Journal v0.1</title>
+<style>
+body{font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#14181f;background:#fbfcfe;max-width:640px;margin:0 auto;padding:56px 22px}
+h1{font-family:Georgia,serif;font-size:30px;margin-bottom:10px}
+a.btn{display:inline-block;margin:16px 0;padding:14px 34px;background:#0e5fd8;color:#fff;text-decoration:none;border-radius:10px;font-weight:600;font-size:17px}
+code{background:#f3f5f9;border-radius:5px;padding:2px 6px;font-size:15px}
+.card{background:#fff;border:1px solid #e5e8ee;border-radius:12px;padding:20px 24px;margin:16px 0}
+.mut{color:#5b6472;font-size:14px}
+</style>
+</head>
+<body>
+<h1>Thank you — your journal is ready.</h1>
+<p>Bookmark this private link. Your purchase includes all future v0.x updates (the Google Sheets template at v0.3 ships free to buyers).</p>
+<a class="btn" href="calibration-trading-journal-v0.1.csv" download>Download the Journal (CSV)</a>
+
+<div class="card">
+<h2 style="font-size:15px;text-transform:uppercase;letter-spacing:.06em">The formulas, in plain English</h2>
+<p><strong>outcome:</strong> win = 1, loss = 0. Leave open trades blank — they're excluded until resolved.</p>
+<p><strong>Brier score:</strong> <code>brier = 2 × (p_win/100 − outcome)²</code></p>
+<ul style="padding-left:18px">
+<li>0.00 — perfect call (said 100% and won, or 0% and it failed)</li>
+<li>0.33 — coin-flip level (no better than chance)</li>
+<li>&lt; 0.15 — sharp; you know your edge</li>
+<li>0.98 — said 70% and lost: false confidence, punished</li>
+</ul>
+<p><strong>Weekly calibration:</strong> average the Brier scores of all resolved rows in the window. Track that number — falling average = real improvement. Compare it to your win-rate: a flat win-rate with a falling Brier means you're learning <em>where</em> your edge lives.</p>
+<p><strong>The one rule:</strong> fill <code>p_win_pct</code> before the trade resolves. No hindsight edits. The discipline <em>is</em> the product.</p>
+</div>
+
+<p class="mut">Refund promise: if your average Brier doesn't drop within 30 days of honest use, email for a full refund. — Oden Goods</p>
+</body>
+</html>

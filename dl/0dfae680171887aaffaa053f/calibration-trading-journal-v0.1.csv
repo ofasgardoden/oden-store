@@ -1,0 +1,4 @@
+date,ticker_or_asset,thesis,direction,entry_price,target_price,stop_price,horizon_days,p_win_pct,outcome,pnl_usd,brier_score,notes
+2026-09-28,CMTL,8-K contract win; pre-earnings drift,long,1.32,1.60,1.20,10,65,win,180,0.245,entered on public filing only
+2026-09-30,XYZ,support retest with volume,long,4.10,4.60,3.90,5,70,loss,-95,0.98,thesis invalidated on volume break — sized small
+2026-10-02,ABC,insider cluster buy (3 Form 4s),long,2.15,2.60,1.95,14,60,open,,,pre-registered; no hindsight edits
